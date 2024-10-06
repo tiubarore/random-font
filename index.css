@@ -34,7 +34,7 @@ button {
 
 @media only screen and (max-width: 600px) {
   h3 {
-    font-size: 2rem;
+    font-size: 4rem;
     min-height: 60px; /* Adjust the min-height for smaller screens */
   }
 
