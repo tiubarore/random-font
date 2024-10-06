@@ -11,24 +11,31 @@ body {
   flex-direction: column;
 }
 
+h3 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  min-height: 100px; /* Set a minimum height to prevent the button from moving */
+  display: flex;
+  align-items: center; /* Vertically center the text inside the h3 */
+  justify-content: center; /* Horizontally center the text inside the h3 */
+  text-align: center;
+}
+
 button {
   padding: 10px 20px;
   font-size: 1.5rem;
-  border-radius: 8px;
-  color: #e9e8e8;
-  background-color: rgb(20, 20, 20);
-  border: 0;
+  position: relative;
+  color: #e3e3e3;
+  background-color: rgb(19, 19, 19);
   cursor: pointer;
-}
-
-h3 {
-  font-size: 5rem;
-  margin-top: 20px;
+  border: 0;
+  border-radius: 7px;
 }
 
 @media only screen and (max-width: 600px) {
   h3 {
-    font-size: 4rem;
+    font-size: 2rem;
+    min-height: 60px; /* Adjust the min-height for smaller screens */
   }
 
   button {

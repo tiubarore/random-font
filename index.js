@@ -2,7 +2,6 @@
 const fonts = [
   { name: "Apollo", path: "./fonts/APOLLO.otf" },
   { name: "Archia", path: "./fonts/archia-regular-webfont.ttf" },
-  { name: "Argesta", path: "./fonts/argestadisplay-regular-webfont.eot" },
   { name: "Aspekta", path: "./fonts/Aspekta-300.otf" },
   { name: "Attena", path: "./fonts/Attena.otf" },
   { name: "Canicule", path: "./fonts/CaniculeDisplayv0.1-Regular.Trial.ttf" },
@@ -34,7 +33,6 @@ const fonts = [
   { name: "snot", path: "./fonts/snot.otf" },
   { name: "Soria", path: "./fonts/Soria.ttf" },
   { name: "Trap", path: "./fonts/Trap-Regular.otf" },
-  { name: "Trento", path: "./fonts/Trento.ttf" },
   { name: "Triakis", path: "./fonts/TriakisFont-Regular.otf" },
   { name: "Tropikal", path: "./fonts/Tropikal-Bold.otf" },
 ];
