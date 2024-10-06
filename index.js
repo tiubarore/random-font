@@ -8,7 +8,7 @@ const fonts = [
   { name: "Evafiya", path: "./fonts/Evafiya.ttf" },
   { name: "Larken", path: "./fonts/LarkenDEMO-Regular.otf" },
   { name: "Roashe", path: "./fonts/RoashePersonalUse.otf" },
-  { name: "Sugar Magic", path: "./fonts/sugarmagicpersonaluseonly-jemyo.otf" },
+  { name: "Sugar", path: "./fonts/sugarmagicpersonaluseonly-jemyo.otf" },
   { name: "Viola", path: "./fonts/VIOLA.ttf" },
   { name: "BICRODE", path: "./fonts/BICRODEPERSONALUSE.ttf" },
   { name: "Block", path: "./fonts/Block.otf" },
@@ -29,7 +29,6 @@ const fonts = [
   { name: "Nephilm", path: "./fonts/Nephilm.otf" },
   { name: "NIM", path: "./fonts/NIM.ttf" },
   { name: "Obrazec-2", path: "./fonts/Obrazec-2.ttf" },
-  { name: "PPNeueMachina", path: "./fonts/PPNeueMachina-PlainRegular.otf" },
   { name: "snot", path: "./fonts/snot.otf" },
   { name: "Soria", path: "./fonts/Soria.ttf" },
   { name: "Trap", path: "./fonts/Trap-Regular.otf" },
@@ -37,24 +36,33 @@ const fonts = [
   { name: "Tropikal", path: "./fonts/Tropikal-Bold.otf" },
 ];
 
-// Get the button and font display elements
 const btn = document.getElementById("btn");
 const font = document.getElementById("font");
+
+// Preload fonts by adding them to the document on page load
+fonts.forEach((font) => {
+  const preload = document.createElement("link");
+  preload.href = font.path;
+  preload.rel = "preload";
+  preload.as = "font";
+  preload.type = font.path.endsWith(".ttf") ? "font/ttf" : "font/otf";
+  document.head.appendChild(preload);
+});
 
 function getRandomFont() {
   const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
   font.innerHTML = randomFont.name;
-  font.style.fontFamily = randomFont.name;
 
-  // Dynamically load the font using @font-face in CSS
-  const style = document.createElement("style");
-  style.innerHTML = `
-    @font-face {
-      font-family: '${randomFont.name}';
-      src: url('${randomFont.path}');
-    }
-  `;
-  document.head.appendChild(style); // Add font-face to the document
+  const fontFace = new FontFace(randomFont.name, `url(${randomFont.path})`);
+  fontFace
+    .load()
+    .then((loadedFontFace) => {
+      document.fonts.add(loadedFontFace);
+      font.style.fontFamily = randomFont.name;
+    })
+    .catch((error) => {
+      console.error(`Failed to load font: ${randomFont.name}`, error);
+    });
 }
 
 btn.addEventListener("click", getRandomFont);
