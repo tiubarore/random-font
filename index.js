@@ -18,7 +18,6 @@ const fonts = [
   { name: "Galnoy", path: "./fonts/Galnoy-BoldDisplay.otf" },
   { name: "Gomawo", path: "./fonts/Gomawo.ttf" },
   { name: "Guminert", path: "./fonts/Guminert.ttf" },
-  { name: "Harmond", path: "./fonts/Harmond-ExtBdItaExp.otf" },
   { name: "karen", path: "./fonts/karen.otf" },
   { name: "Leiko", path: "./fonts/Leiko-Regular.otf" },
   { name: "Maghfirea", path: "./fonts/Maghfirea.ttf" },
@@ -63,6 +62,14 @@ function getRandomFont() {
     .catch((error) => {
       console.error(`Failed to load font: ${randomFont.name}`, error);
     });
+
+  if (randomFont.name === "BICRODE") {
+    font.style.fontSize = "3rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "Necosmic") {
+    font.style.fontSize = "3rem";
+    btn.style.marginLeft = "50px";
+  }
 }
 
 btn.addEventListener("click", getRandomFont);

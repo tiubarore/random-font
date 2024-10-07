@@ -14,10 +14,10 @@ body {
 h3 {
   font-size: 5rem;
   margin-bottom: 20px;
-  min-height: 100px; /* Set a minimum height to prevent the button from moving */
+  min-height: 100px;
   display: flex;
-  align-items: center; /* Vertically center the text inside the h3 */
-  justify-content: center; /* Horizontally center the text inside the h3 */
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -35,11 +35,12 @@ button {
 @media only screen and (max-width: 600px) {
   h3 {
     font-size: 4rem;
-    min-height: 60px; /* Adjust the min-height for smaller screens */
+    min-height: 60px;
   }
 
   button {
     font-size: 1rem;
     padding: 8px 16px;
+    position: relative;
   }
 }
