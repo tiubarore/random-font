@@ -39,6 +39,14 @@ const fonts = [
   { name: "NeueMachina", path: "./fonts/PPNeueMachina-PlainRegular.otf" },
   { name: "Ortland", path: "./fonts/Ortland.otf" },
   { name: "Terano", path: "./fonts/Terano-Regular.otf" },
+  { name: "Porao", path: "./fonts/Porao-Regular.otf" },
+  { name: "Nebula", path: "./fonts/Nebula-Regular.otf" },
+  { name: "PlanetKosmos", path: "./fonts/PLANK___.TTF" },
+  { name: "Pissjar", path: "./fonts/PissjarSans.ttf" },
+  { name: "CROWNED", path: "./fonts/CROWNEDPERSONALUSE.ttf" },
+  { name: "M290", path: "./fonts/M290.ttf" },
+  { name: "DASH", path: "./fonts/DASH-Early.otf" },
+  { name: "Anvha", path: "./fonts/Anvha.ttf" },
 ];
 
 const btn = document.getElementById("btn");
