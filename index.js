@@ -76,7 +76,7 @@ function getRandomFont() {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else {
-    font.style.fontSize = "8rem";
+    font.style.fontSize = "5rem";
   }
 }
 
