@@ -90,7 +90,7 @@ function getRandomFont() {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "CheerfulHump") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "3.5rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "Terano") {
     font.style.fontSize = "2rem";
@@ -102,7 +102,10 @@ function getRandomFont() {
     font.style.fontSize = "2.75rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "PlanetKosmos") {
-    font.style.fontSize = "2.5rem";
+    font.style.fontSize = "2rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "Baunk") {
+    font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else {
     font.style.fontSize = "5rem";
