@@ -33,6 +33,12 @@ const fonts = [
   { name: "Trap", path: "./fonts/Trap-Regular.otf" },
   { name: "Triakis", path: "./fonts/TriakisFont-Regular.otf" },
   { name: "Tropikal", path: "./fonts/Tropikal-Bold.otf" },
+  { name: "Arc", path: "./fonts/Arc.otf" },
+  { name: "Belkis", path: "./fonts/Belkis-Regular.otf" },
+  { name: "CheerfulHump", path: "./fonts/CheerfulHump-Regular.otf" },
+  { name: "NeueMachina", path: "./fonts/PPNeueMachina-PlainRegular.otf" },
+  { name: "Ortland", path: "./fonts/Ortland.otf" },
+  { name: "Terano", path: "./fonts/Terano-Regular.otf" },
 ];
 
 const btn = document.getElementById("btn");
