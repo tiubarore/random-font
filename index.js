@@ -69,6 +69,8 @@ function getRandomFont() {
   } else if (randomFont.name === "Necosmic") {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
+  } else {
+    font.style.fontSize = "8rem";
   }
 }
 
