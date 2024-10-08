@@ -79,6 +79,7 @@ function getRandomFont() {
     .catch((error) => {
       console.error(`Failed to load font: ${randomFont.name}`, error);
     });
+
   // modify font size if too big on mobile
   if (randomFont.name === "BICRODE") {
     font.style.fontSize = "3rem";
