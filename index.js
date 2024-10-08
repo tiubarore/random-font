@@ -96,10 +96,10 @@ function getRandomFont() {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "CROWNED") {
-    font.style.fontSize = "1rem";
+    font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "PlanetKosmos") {
-    font.style.fontSize = "1rem";
+    font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else {
     font.style.fontSize = "5rem";
