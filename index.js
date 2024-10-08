@@ -80,36 +80,52 @@ function getRandomFont() {
       console.error(`Failed to load font: ${randomFont.name}`, error);
     });
 
+  /*
   // modify font size if too big on mobile
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+    // Current device is a mobile device
+    if (
+      (randomFont.name === "snot") |
+      (randomFont.name === "Baunk") |
+        (randomFont.name === "karen") |
+        (randomFont.name === "Eirene"))
+     {
+      btn.style.marginRight = "50px";
+    }
+  }*/
+
   if (randomFont.name === "BICRODE") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "3rem"; //3rem
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "Necosmic") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "3rem"; //3
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "NeueMachina") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "3rem"; //3
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "CheerfulHump") {
-    font.style.fontSize = "3.5rem";
+    font.style.fontSize = "3.5rem"; //3.5
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "Terano") {
-    font.style.fontSize = "2rem";
+    font.style.fontSize = "2rem"; //2
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "Nebula") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "3rem"; //3
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "CROWNED") {
-    font.style.fontSize = "2.75rem";
+    font.style.fontSize = "2.75rem"; //2.75
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "PlanetKosmos") {
-    font.style.fontSize = "2rem";
+    font.style.fontSize = "2rem"; //2
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "Baunk") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "3rem"; //3
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "Crude") {
+    font.style.fontSize = "4rem"; //3
     btn.style.marginLeft = "50px";
   } else {
-    font.style.fontSize = "5rem";
+    font.style.fontSize = "5rem"; //5
   }
 }
 

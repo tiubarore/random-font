@@ -11,9 +11,9 @@ body {
   flex-direction: column;
 }
 
-h3 {
+p {
   font-size: 8rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   min-height: 100px;
   display: flex;
   align-items: center;
@@ -30,6 +30,7 @@ button {
   cursor: pointer;
   border: 0;
   border-radius: 7px;
+  align-self: center;
 }
 
 @media only screen and (max-width: 600px) {
