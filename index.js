@@ -37,7 +37,7 @@ const fonts = [
   { name: "Belkis", path: "./fonts/Belkis-Regular.otf" },
   { name: "CheerfulHump", path: "./fonts/CheerfulHump-Regular.otf" },
   { name: "NeueMachina", path: "./fonts/PPNeueMachina-PlainRegular.otf" },
-  { name: "Ortland", path: "./fonts/Ortland.otf" },
+  { name: "Ortland", path: "./fonts/Ortland.ttf" },
   { name: "Terano", path: "./fonts/Terano-Regular.otf" },
   { name: "Porao", path: "./fonts/Porao-Regular.otf" },
   { name: "Nebula", path: "./fonts/Nebula-Regular.otf" },
@@ -76,7 +76,7 @@ function getRandomFont() {
     .catch((error) => {
       console.error(`Failed to load font: ${randomFont.name}`, error);
     });
-
+  // modify font size if too big on mobile
   if (randomFont.name === "BICRODE") {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
@@ -91,6 +91,15 @@ function getRandomFont() {
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "Terano") {
     font.style.fontSize = "2rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "Nebula") {
+    font.style.fontSize = "3rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "CROWNED") {
+    font.style.fontSize = "1rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "PlanetKosmos") {
+    font.style.fontSize = "1rem";
     btn.style.marginLeft = "50px";
   } else {
     font.style.fontSize = "5rem";
