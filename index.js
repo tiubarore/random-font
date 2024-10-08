@@ -47,6 +47,9 @@ const fonts = [
   { name: "M290", path: "./fonts/M290.ttf" },
   { name: "DASH", path: "./fonts/DASH-Early.otf" },
   { name: "Anvha", path: "./fonts/Anvha.ttf" },
+  { name: "Baunk", path: "./fonts/Baunk.ttf" },
+  { name: "Heming", path: "./fonts/Heming.ttf" },
+  { name: "Mersad", path: "./fonts/MersadRegular.ttf" },
 ];
 
 const btn = document.getElementById("btn");
@@ -96,10 +99,10 @@ function getRandomFont() {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "CROWNED") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "2.75rem";
     btn.style.marginLeft = "50px";
   } else if (randomFont.name === "PlanetKosmos") {
-    font.style.fontSize = "3rem";
+    font.style.fontSize = "2.5rem";
     btn.style.marginLeft = "50px";
   } else {
     font.style.fontSize = "5rem";
