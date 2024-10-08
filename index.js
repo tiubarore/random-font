@@ -75,6 +75,15 @@ function getRandomFont() {
   } else if (randomFont.name === "Necosmic") {
     font.style.fontSize = "3rem";
     btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "NeueMachina") {
+    font.style.fontSize = "3rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "CheerfulHump") {
+    font.style.fontSize = "3rem";
+    btn.style.marginLeft = "50px";
+  } else if (randomFont.name === "Terano") {
+    font.style.fontSize = "2rem";
+    btn.style.marginLeft = "50px";
   } else {
     font.style.fontSize = "5rem";
   }
