@@ -50,6 +50,17 @@ const fonts = [
   { name: "Baunk", path: "./fonts/Baunk.ttf" },
   { name: "Heming", path: "./fonts/Heming.ttf" },
   { name: "Mersad", path: "./fonts/MersadRegular.ttf" },
+  { name: "Efesto", path: "./fonts/Efesto-Regular Otf.otf" },
+  { name: "GREY", path: "./fonts/GREY.ttf" },
+  { name: "Hyrbo", path: "./fonts/Hyrbo-Bold.otf" },
+  { name: "Kitchen Sink", path: "./fonts/Kitchen Sink Regular.otf" },
+  { name: "Maragsa", path: "./fonts/Maragsa╠é-Display.otf" },
+  { name: "odale", path: "./fonts/odale.otf" },
+  { name: "Cirka", path: "./fonts/PPCirka-Light.otf" },
+  { name: "Hatton", path: "./fonts/PPHatton-Medium.otf" },
+  { name: "Telegraf", path: "./fonts/PPTelegraf-Regular.otf" },
+  { name: "scotland", path: "./fonts/scotland.otf" },
+  { name: "Think", path: "./fonts/Think.ttf" },
 ];
 
 const btn = document.getElementById("btn");
