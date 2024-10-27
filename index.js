@@ -60,6 +60,7 @@ const fonts = [
   { name: "Telegraf", path: "./fonts/PPTelegraf-Regular.otf" },
   { name: "scotland", path: "./fonts/scotland.otf" },
   { name: "Think", path: "./fonts/Think.ttf" },
+  { name: "Serial C", path: "./fonts/SerialC-Medium.ttf" },
 ];
 
 const btn = document.getElementById("btn");
